@@ -1,0 +1,539 @@
+@media screen and (min-width: 1100px){
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body,html {
+  padding: 0;
+  margin: 0;
+  height:100%;
+}
+
+ /*leftside*/
+  
+  .wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(7, 25%);
+    grid-column-gap:0px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+/*slidedownpage*/
+.bg {
+    grid-column: 1 / 5;
+    grid-row: 1 /7;
+    background-color: #FCDBA7;
+    z-index: -1;
+}
+
+.topbar {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+/* dropdown */
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.801);
+  height: 60%;
+  width: 210px;
+  padding: 10px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  grid-column: 1;
+  grid-row: 1;
+  width:210px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.801);
+  min-width: 210px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #3C658E;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(255, 255, 255)}
+
+.big { 
+  display: none; 
+}
+
+.icon2 {
+    grid-column: 2;
+    grid-row: 1;
+    width:30%;
+    margin-left: 90%;
+    margin-top: 3%;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: 1;
+    width: 25%;
+}
+
+.label {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  color:#3C658E;
+  font-weight: 800;
+  font-size: 30pt;
+  text-align: left;
+  margin-left: 16%;
+  margin-top: 2%;
+}
+
+img {
+  border-radius: 10%;
+}
+
+.box1 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 5;
+  position: relative;
+  width: 50%;
+  height: 57.5%;
+  margin-left: 24%;
+}
+
+.box1:hover .overlay {
+  opacity: 1;
+}
+
+.box2 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  margin-left: 27%;
+  position: relative;
+  width: 50%;
+  height:58%;
+}
+
+.box2:hover .overlay {
+  opacity: 1;
+}
+
+.box3 {
+  grid-column: 3 / 5;
+  grid-row: 2 / 5;
+  margin-left: 30%;
+  position: relative;
+  width: 50%;
+  height:58%;
+}
+
+.box3:hover .overlay {
+  opacity: 1;
+}
+
+
+.box4 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 7;
+  margin-left: 24%;
+  position: relative;
+  width: 50%;
+  height:58%;
+}
+
+.box4:hover .overlay {
+  opacity: 1;
+}
+
+.box5 {
+  grid-column: 2 / 4;
+  grid-row: 4 / 7;
+  margin-left: 27%;
+  position: relative;
+  width: 50%;
+  height:58%;
+}
+
+.box5:hover .overlay {
+  opacity: 1;
+}
+
+.box6 {
+  grid-column: 3 / 5;
+  grid-row: 4 / 7;
+  margin-left: 30%;
+  position: relative;
+  width: 50%;
+  height:58%;
+}
+
+.box6:hover .overlay {
+  opacity: 1;
+}
+
+.images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3C658E;
+  border-radius: 10%;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact {
+  grid-column: 1 / 5;
+  grid-row: 6 / 7;
+  margin-top:5%;
+}
+
+ul li {
+  display:inline;
+}
+
+.insta {
+  width: 40px;
+  fill:#3C658E;
+  margin-left: 35%; 
+  margin-bottom: 25px;
+}
+
+.insta:hover {
+  fill: #ffffff;
+}
+
+.linkedin {
+  width: 42px;
+  fill:#3C658E;
+  margin-top: 75px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+.linkedin:hover {
+  fill: #ffffff;
+}
+
+.twitter {
+  width: 42px;
+  fill:#3C658E;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+.twitter:hover {
+  fill: #ffffff;
+}
+
+}
+
+
+
+@media screen and (max-width: 1099px){
+  
+  *{
+    margin: 0;
+    padding:0;
+  }
+  
+  body,html {
+  padding: 0;
+  margin: 0;
+  height:100%;
+  }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(11, 25%);
+    font-family: 'Nunito', sans-serif;
+  }
+  .bg {
+    grid-column: 1 / 5;
+    grid-row: 1 / 11;
+    background-color: #FCDBA7;
+    z-index: -1;
+}
+
+.topbar {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.801);
+  height: 60%;
+  width:100%;
+  padding: 10px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.801);
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #3C658E;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(255, 255, 255)}
+
+.label {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  color:#3C658E;
+  font-weight: 800;
+  font-size: 15pt;
+  text-align: left;
+  margin-left: 28%;
+  margin-top: 35px;
+}
+
+.icon2 {
+  grid-column: 2;
+  grid-row: 1;
+  width:50px;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 1;
+  width: 20px;
+}
+
+img {
+  border-radius: 10%;
+}
+
+.box1 {
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+  position: relative;
+  margin-top:160px;
+  width: 260px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.box1:hover .overlay {
+  opacity: 1;
+}
+
+.box2 {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  position: relative;
+  margin-top: 30px;
+  width: 260px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.box2:hover .overlay {
+  opacity: 1;
+}
+
+.box3 {
+  grid-column: 1 / 5;
+  grid-row: 4 / 6;
+  position: relative;
+  margin-top:120px;
+  width: 260px;
+  margin-left: auto;
+  margin-right:auto;
+
+}
+
+.box3:hover .overlay {
+  opacity: 1;
+}
+
+.box4 {
+  grid-column: 1 / 5;
+  grid-row: 5 / 7;
+  position: relative;
+  margin-top:210px;
+  width: 260px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.box4:hover .overlay {
+  opacity: 1;
+}
+
+.box5 {
+  grid-column: 1 / 5;
+  grid-row: 7 / 9;
+  position: relative;
+  margin-top: 90px;
+  width: 260px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.box5:hover .overlay {
+  opacity: 1;
+}
+
+.box6 {
+  grid-column: 1 / 5;
+  grid-row: 9 / 11;
+  position: relative;
+  width: 260px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.box6:hover .overlay {
+  opacity: 1;
+}
+
+.images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 260px;
+  width: 260px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3C658E;
+  border-radius: 10%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact {
+  grid-column: 1 / 5;
+  grid-row: 10 / 10;
+  margin-top:15%;
+}
+
+
+ul li {
+  display:inline;
+}
+
+.insta {
+  width: 20px;
+  fill:#3C658E;
+  margin-top: 0px;
+  margin-left:18%; 
+}
+
+.insta:hover {
+  fill: #ffffff;
+}
+
+.linkedin {
+  width: 23px;
+  fill:#3C658E;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+.linkedin:hover {
+  fill: #ffffff;
+}
+
+.twitter {
+  width: 23px;
+  fill:#3C658E;
+  margin-left: 23px;
+}
+.twitter:hover {
+  fill: #ffffff;
+}
+}
