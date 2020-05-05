@@ -56,6 +56,11 @@ body,html {
   display: inline-block;
 }
 
+.home{
+  grid-column: 2;
+  grid-row: 1;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -292,6 +297,11 @@ ul li {
     grid-row: 1 / 11;
     background-color: #FCDBA7;
     z-index: -1;
+}
+
+.home{
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .topbar {
